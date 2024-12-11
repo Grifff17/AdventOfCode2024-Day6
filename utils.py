@@ -10,6 +10,10 @@ def fileRead(name):
 def posAdd(pos1, pos2):
     return tuple([ sum(coords) for coords in zip(pos1, pos2) ])
 
+#adds two xy coordinates together
+def posMult(pos1, pos2):
+    return tuple([ a*b for a,b in zip(pos1, pos2) ])
+
 #checks if a xy coordinate is within a grid
 def inGrid(pos, grid):
     return pos[0] >= 0 and pos[0] < len(grid) and pos[1] >= 0 and pos[1] < len(grid[0])
